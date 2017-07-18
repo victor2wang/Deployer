@@ -1,0 +1,24 @@
+0000000000000000000000000000000000000000 77960f19c722b3e871ba25993b7a5402a58d0877 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488470468 -0500	commit (initial): test1
+77960f19c722b3e871ba25993b7a5402a58d0877 d15f44d633b06f27539a1be7c2e7918bae59140b victor.wang <victor.wang@PS00025.pongmarketing.local> 1488470537 -0500	commit: first commit
+d15f44d633b06f27539a1be7c2e7918bae59140b bcf7c0bf5a3ffb3f66b3cad323d98d412a735c86 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488470591 -0500	commit: second change
+bcf7c0bf5a3ffb3f66b3cad323d98d412a735c86 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488471695 -0500	commit: say hello page
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488471829 -0500	checkout: moving from master to develop
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 7520d932c73c0683dd07e0d504ea21db8f0481ea victor.wang <victor.wang@PS00025.pongmarketing.local> 1488471895 -0500	commit: change return word
+7520d932c73c0683dd07e0d504ea21db8f0481ea bc837c7739c5903123df1e71dd24445ad396f1b1 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472179 -0500	commit: adding windows
+bc837c7739c5903123df1e71dd24445ad396f1b1 bc837c7739c5903123df1e71dd24445ad396f1b1 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472443 -0500	checkout: moving from develop to feature/feature1
+bc837c7739c5903123df1e71dd24445ad396f1b1 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472524 -0500	commit: commit 1
+13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472524 -0500	checkout: moving from feature/feature1 to master
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472585 -0500	checkout: moving from master to feature/feature1
+13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472647 -0500	checkout: moving from feature/feature1 to hotfix/hotfix1
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472667 -0500	checkout: moving from hotfix/hotfix1 to master
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 bc837c7739c5903123df1e71dd24445ad396f1b1 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472667 -0500	checkout: moving from master to develop
+bc837c7739c5903123df1e71dd24445ad396f1b1 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472705 -0500	merge refs/heads/feature/feature1: Fast-forward
+13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474025 -0500	checkout: moving from develop to Release1
+13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 cffdbe597363cc8a0f0d7e98a74eaddbcc761ad6 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474103 -0500	commit: adding ll
+cffdbe597363cc8a0f0d7e98a74eaddbcc761ad6 e8b5861f2600e892bc74e418aa6b2fd14ef05755 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474141 -0500	commit: adding more word
+e8b5861f2600e892bc74e418aa6b2fd14ef05755 e8b5861f2600e892bc74e418aa6b2fd14ef05755 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474166 -0500	checkout: moving from Release1 to release2
+e8b5861f2600e892bc74e418aa6b2fd14ef05755 c37836f2ec1eb2ec3d863551e40d9ece0085a25d victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474244 -0500	commit: modify jsp and java
+c37836f2ec1eb2ec3d863551e40d9ece0085a25d e8b5861f2600e892bc74e418aa6b2fd14ef05755 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474266 -0500	checkout: moving from release2 to Release1
+e8b5861f2600e892bc74e418aa6b2fd14ef05755 c37836f2ec1eb2ec3d863551e40d9ece0085a25d victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474277 -0500	checkout: moving from Release1 to release2
+c37836f2ec1eb2ec3d863551e40d9ece0085a25d 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474301 -0500	checkout: moving from release2 to feature/feature1
+13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488474311 -0500	checkout: moving from feature/feature1 to master

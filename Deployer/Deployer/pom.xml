@@ -1,0 +1,183 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.yw</groupId>
+	<artifactId>Deployer</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Deployer</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ucp</artifactId>
+			<version>11.2.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.proguard</groupId>
+			<artifactId>proguard</artifactId>
+			<version>5.2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.5</version>
+		</dependency>
+<dependency> 
+   <groupId>info.cukes</groupId> 
+   <artifactId>cucumber-java</artifactId> 
+   <version>1.0.2</version> 
+   <scope>test</scope> 
+</dependency>
+<dependency> 
+   <groupId>info.cukes</groupId> 
+   <artifactId>cucumber-junit</artifactId> 
+   <version>1.0.2</version> 
+   <scope>test</scope> 
+</dependency>
+<dependency> 
+   <groupId>org.seleniumhq.selenium</groupId> 
+   <artifactId>selenium-java</artifactId> 
+   <version>2.47.1</version> 
+</dependency>
+	</dependencies>
+	<build>
+		<finalName>Deployer</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>com.yw.deploy.Deployer</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.github.wvengen</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<version>2.0.8</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<proguardVersion>5.2.1</proguardVersion>
+					<obfuscate>true</obfuscate>
+					<options>
+						<option>-ignorewarnings</option>
+						<option>-dontshrink</option>
+						<option>-dontoptimize</option>
+<!-- 						<option>-dontpreverify</option> -->
+						<option>-verbos</option>
+						<option>-keep public class com.yw.deploy.Deployer {
+							public
+							static void main(java.lang.String[]);
+							}
+						</option>
+						<option>-keep public class com.yw.test1.TestHD {
+							public
+							static void main(java.lang.String[]);
+							}
+						</option>						
+						<option>-keep class org.apache.** {*;}</option>
+						<option>-keep class oracle.** {*;}</option>
+						<option>-keep class com.sun.** {*;}</option>
+						<option>-keep class oracle.dms.** {*;}</option>
+						<option>-keep class au.com.** {*;}</option>
+						<!-- <option>-dontwarn oracle.security.**</option> -->
+						<option>-dontwarn oracle.**</option>
+						<option>-dontwarn com.sun.**</option>
+						<!-- <option>-dontwarn oracle.jdbc.**</option> -->
+						<option>-dontwarn org.apache.**</option>
+						<option>-dontnote oracle.** </option>
+						<option>-dontnote org.apache.** </option>
+						<option>-dontnote com.yw.** </option>
+						<option>-dontnote au.com.** </option>
+						<option>-dontskipnonpubliclibraryclasses</option>
+						<option>-dontskipnonpubliclibraryclassmembers</option>
+						<option>-keepattributes *Annotation*,EnclosingMethod,Signature</option>
+						<option>-keep class * extends java.lang.annotation.Annotation { *;
+							}</option>
+						<option>-injars target/original-Deployer.jar</option>
+						<option>-outjars target/Deployer-ob.jar</option>
+					</options>
+					<outputDirectory>${project.build.directory}</outputDirectory>
+					<maxMemory>256m</maxMemory>
+					<libs>
+						<lib>${java.home}/lib/rt.jar</lib>
+					</libs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

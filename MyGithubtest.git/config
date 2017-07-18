@@ -1,0 +1,13 @@
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+[gitflow "prefix"]
+	feature = feature/
+	release = release/
+	hotfix = hotfix/
+	versiontag = 
+[gitflow "branch"]
+	develop = develop
+	master = master

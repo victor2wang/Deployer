@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 e514ef8b2ab1a901cca02b07cd3c602b080f4922 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488471829 -0500	branch: Created from commit say hello page
+e514ef8b2ab1a901cca02b07cd3c602b080f4922 7520d932c73c0683dd07e0d504ea21db8f0481ea victor.wang <victor.wang@PS00025.pongmarketing.local> 1488471895 -0500	commit: change return word
+7520d932c73c0683dd07e0d504ea21db8f0481ea bc837c7739c5903123df1e71dd24445ad396f1b1 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472179 -0500	commit: adding windows
+bc837c7739c5903123df1e71dd24445ad396f1b1 13212c2900d8631019f1d1af5e3b6ed2eab2b9a2 victor.wang <victor.wang@PS00025.pongmarketing.local> 1488472705 -0500	merge refs/heads/feature/feature1: Fast-forward
