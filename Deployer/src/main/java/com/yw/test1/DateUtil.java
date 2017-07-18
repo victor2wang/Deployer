@@ -21,7 +21,7 @@ public class DateUtil {
     // Add your own format here.
     private static List<SimpleDateFormat> 
             dateFormats = new ArrayList<SimpleDateFormat>() {
-		private static final long serialVersionUID = 111100011L; 
+		private static final long serialVersionUID = 111100000011L; 
 		{
             add(new SimpleDateFormat("M/dd/yyyy"));
             add(new SimpleDateFormat("dd.M.yyyy"));
