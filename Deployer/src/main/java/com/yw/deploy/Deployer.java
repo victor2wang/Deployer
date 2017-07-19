@@ -32,7 +32,7 @@ public class Deployer implements Runnable {
 	private static Logger log = Logger.getLogger(Deployer.class.getName());
 	private static final long SLEEP = 5000L;// 5s
 	private static final long UPDATE_SYSTEM_TIME = 60 * 1000;// 1min
-	private static final long BAK_DB_INTERVAL = 500 * 60 * 1000;//5 minutes
+	private static final long BAK_DB_INTERVAL = 501 * 60 * 1000;//5 minutes
 	private long lastCheckSystemTime = System.currentTimeMillis();
 	private long lastDBBakTime = System.currentTimeMillis();
 	private boolean running;
